@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="DIRILGRAPHIX DESIGN — creative graphic design studio in Uganda.">
+<title>DIRILGRAPHIX DESIGN | Creative Studio</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#070711;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+.nav{position:fixed;top:0;left:0;right:0;z-index:10;background:rgba(7,7,17,.82);backdrop-filter:blur(15px);border-bottom:1px solid #ffffff14}
+.nav-inner{max-width:1180px;margin:auto;padding:14px 24px;display:flex;justify-content:space-between;align-items:center}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:2px}.logo img{width:48px;height:48px;object-fit:cover;border-radius:50%;border:2px solid #f5a623}
+.logo-mark{width:45px;height:45px;border-radius:13px;display:grid;place-items:center;background:linear-gradient(135deg,#7c3cff,#ff168d);font-size:21px;box-shadow:0 8px 25px #7c3cff55}
+.links{display:flex;gap:25px;font-size:14px;font-weight:700;color:#ddd}
+.links a:hover{color:#ff70bd}
+.hero{min-height:100vh;padding:140px 24px 80px;display:flex;align-items:center;overflow:hidden;position:relative}
+.hero:before{content:"";position:absolute;inset:-25%;background:radial-gradient(circle at 18% 25%,#6929ff 0,transparent 30%),radial-gradient(circle at 80% 20%,#ed087c 0,transparent 32%),radial-gradient(circle at 55% 90%,#1535d8 0,transparent 36%);filter:blur(35px);opacity:.7}
+.hero-inner{position:relative;max-width:1180px;width:100%;margin:auto;display:grid;grid-template-columns:1.1fr .9fr;gap:60px;align-items:center}
+.eyebrow{text-transform:uppercase;letter-spacing:4px;font-size:12px;font-weight:800;color:#e9a9ff;margin-bottom:18px}
+h1{font-size:clamp(55px,8vw,100px);line-height:.9;letter-spacing:-5px;text-transform:uppercase}
+.gradient{background:linear-gradient(90deg,#fff,#d99aff,#ff55ae);-webkit-background-clip:text;color:transparent}
+.hero p{max-width:650px;color:#c9c9d2;font-size:18px;margin:25px 0 30px}
+.buttons{display:flex;gap:13px;flex-wrap:wrap}
+.btn{padding:14px 23px;border-radius:999px;font-weight:900}
+.primary{background:#fff;color:#08080f}
+.secondary{background:#ffffff0d;border:1px solid #ffffff25}
+.visual{height:500px;border:1px solid #ffffff18;border-radius:30px;background:linear-gradient(145deg,#18112d,#0d0b19);position:relative;overflow:hidden;box-shadow:0 30px 90px #0008}
+.visual:before,.visual:after{content:"";position:absolute;border-radius:50%;filter:blur(3px)}
+.visual:before{width:310px;height:310px;right:-70px;top:-70px;background:#ff0b86aa}
+.visual:after{width:330px;height:330px;left:-120px;bottom:-100px;background:#5930ffaa}
+.visual-content{position:absolute;inset:28px;border:1px solid #ffffff22;border-radius:23px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;background:#ffffff08;z-index:1}
+.hero-logo{width:170px;height:170px;object-fit:cover;border-radius:50%;border:4px solid #f5a623;box-shadow:0 15px 45px #0008}
+.visual-title{font-size:34px;font-weight:900;text-transform:uppercase}
+.visual-sub{color:#bbb;font-size:14px}
+section{padding:95px 24px}
+.wrap{max-width:1180px;margin:auto}
+.section-title{font-size:43px;letter-spacing:-2px}
+.section-sub{color:#aaa;max-width:680px;margin:8px 0 35px}
+.services{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{padding:29px;border-radius:21px;background:linear-gradient(145deg,#ffffff0c,#ffffff03);border:1px solid #ffffff12}
+.icon{font-size:31px;margin-bottom:14px}
+.card h3{margin-bottom:8px}
+.card p{color:#999;font-size:14px}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.project{height:310px;border-radius:22px;overflow:hidden;position:relative;border:1px solid #ffffff14;background:#111}
+.project:nth-child(1){background:linear-gradient(135deg,#25105b,#ec0b83)}
+.project:nth-child(2){background:linear-gradient(135deg,#07194a,#256cff,#8d2cff)}
+.project:nth-child(3){background:linear-gradient(135deg,#2d081e,#ff3b8d,#ffb23e)}
+.project:nth-child(4){background:linear-gradient(135deg,#101010,#34344b,#a78bfa)}
+.project:nth-child(5){background:linear-gradient(135deg,#051d24,#00a98f,#173cbb)}
+.project:nth-child(6){background:linear-gradient(135deg,#25140a,#e97d18,#ffcf63)}
+.project-inner{position:absolute;inset:20px;border:1px solid #ffffff55;border-radius:17px;padding:23px;display:flex;flex-direction:column;justify-content:flex-end;background:linear-gradient(transparent,#0009)}
+.project-label{font-size:25px;font-weight:900;text-transform:uppercase}
+.project-type{font-size:12px;color:#ddd;text-transform:uppercase;letter-spacing:2px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.about-box{padding:38px;border-radius:26px;background:linear-gradient(135deg,#261050,#100b20);border:1px solid #ffffff12}
+.about-mark{font-size:75px;font-weight:1000;background:linear-gradient(90deg,#fff,#d99aff,#ff55ae);-webkit-background-clip:text;color:transparent}
+.about p{color:#bbb}
+.contact{background:linear-gradient(135deg,#140722,#26092f,#080714)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:35px}
+form{display:grid;gap:13px}
+input,textarea{background:#0b0912;border:1px solid #ffffff18;color:#fff;padding:15px;border-radius:12px;width:100%;outline:none}
+textarea{min-height:135px;resize:vertical}
+footer{text-align:center;padding:30px;color:#777;border-top:1px solid #ffffff10}
+@media(max-width:800px){.links{display:none}.hero-inner,.about,.contact-grid{grid-template-columns:1fr}.services,.gallery{grid-template-columns:1fr 1fr}.visual{height:400px}}
+@media(max-width:520px){.services,.gallery{grid-template-columns:1fr}h1{letter-spacing:-3px}.visual{height:350px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+<div class="nav-inner">
+<a class="logo" href="#home"><img src="assets/diril-graphix-studio-logo.jpg" alt="DIRIL Graphix Studio Logo"><span>DIRIL GRAPHIX STUDIO</span></a>
+<div class="links"><a href="#home">Home</a><a href="#services">Services</a><a href="#mission">Mission</a><a href="#gallery">Gallery</a><a href="#about">About</a><a href="#contact">Contact</a></div>
+</div>
+</nav>
+
+<section class="hero" id="home">
+<div class="hero-inner">
+<div>
+<div class="eyebrow">DIRILGRAPHIX DESIGN</div>
+<h1>Ideas into <span class="gradient">visual impact.</span></h1>
+<p>A Christian graphic design studio creating powerful visual designs for Christ-centered events, ministries, churches and Kingdom-focused projects.</p>
+<div class="buttons"><a class="btn primary" href="#gallery">Explore Gallery</a><a class="btn secondary" href="#contact">Start a Project</a></div>
+</div>
+<div class="visual">
+<div class="visual-content">
+<img class="hero-logo" src="assets/diril-graphix-studio-logo.jpg" alt="DIRIL Graphix Studio Logo">
+<div><div class="visual-title">Create.<br>Serve.<br>Glorify Christ.</div><div class="visual-sub">Designing for Christ. Creating with purpose. Serving with skill.</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="wrap">
+<h2 class="section-title">What We Do</h2>
+<p class="section-sub">We specialise in five core design services for Christ-centered events and Kingdom projects: flyers, banners, business cards, T-shirts and logos.</p>
+<div class="services">
+<div class="card"><div class="icon">✦</div><h3>Flyer Designs</h3><p>Eye-catching flyers for events, promotions, businesses, churches, schools and announcements.</p></div>
+<div class="card"><div class="icon">▣</div><h3>Banner Designs</h3><p>Professional banners designed to make your brand, event or message stand out.</p></div>
+<div class="card"><div class="icon">◆</div><h3>Business Card Designs</h3><p>Clean and professional business cards that give your brand a strong first impression.</p></div>
+<div class="card"><div class="icon">◎</div><h3>T-Shirt Designs</h3><p>Creative T-shirt graphics for brands, teams, events, groups and personal projects.</p></div>
+<div class="card"><div class="icon">◈</div><h3>Logo Designs</h3><p>Unique and memorable logos created to give your business or organisation a distinctive identity.</p></div>
+</div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="wrap">
+<h2 class="section-title">Gallery</h2>
+<p class="section-sub">Explore our creative design categories and see the possibilities for your next project.</p>
+<div class="gallery">
+<div class="project"><div class="project-inner"><div class="project-label">Flyer Design</div><div class="project-type">Promotional Graphics</div></div></div>
+<div class="project"><div class="project-inner"><div class="project-label">Banner Design</div><div class="project-type">Large Format Graphics</div></div></div>
+<div class="project"><div class="project-inner"><div class="project-label">Business Card</div><div class="project-type">Professional Branding</div></div></div>
+<div class="project"><div class="project-inner"><div class="project-label">T-Shirt Design</div><div class="project-type">Custom Apparel Graphics</div></div></div>
+<div class="project"><div class="project-inner"><div class="project-label">Logo Design</div><div class="project-type">Brand Identity</div></div></div>
+<div class="project"><div class="project-inner"><div class="project-label">Custom Design</div><div class="project-type">Creative Graphics</div></div></div>
+</div>
+</div>
+</section>
+
+<section id="mission">
+<div class="wrap">
+<div class="eyebrow">Our Mission</div>
+<h2 class="section-title">Christ is the purpose behind the creativity.</h2>
+<p class="section-sub">We use graphic design as a skill to serve Christ and support Christ-centered events, ministries and Kingdom work.</p>
+<div class="services">
+<div class="card"><div class="icon">✝</div><h3>CHRIST</h3><p>Our creativity is dedicated to honouring Christ and supporting the message of the Gospel.</p></div>
+<div class="card"><div class="icon">◎</div><h3>PURPOSE</h3><p>Every design has a purpose: to communicate, inspire, invite and serve Christ-centered events.</p></div>
+<div class="card"><div class="icon">✦</div><h3>SKILLS</h3><p>We develop and use our graphic design skills to create quality work that serves churches and Christian ministries.</p></div>
+</div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap about">
+<div>
+<div class="eyebrow">About Us</div>
+<h2 class="section-title">Design with purpose. Creativity without limits.</h2>
+<p class="section-sub">DIRILGRAPHIX DESIGN is a Christian graphic design studio dedicated to serving Christ through creativity. We design for Christian events, churches, ministries, conferences, outreaches and other Christ-centered projects.</p>
+</div>
+<div class="about-box"><div class="about-mark">DG</div><h2>DIRILGRAPHIX DESIGN</h2><p>Flyers • Banners • Business Cards • T-Shirts • Logos<br><br>CHRIST • PURPOSE • SKILLS</p></div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap contact-grid">
+<div>
+<div class="eyebrow">Let's Create</div>
+<h2 class="section-title">Have a design project?</h2>
+<p class="section-sub">Tell us about your Christ-centered event or project and let's turn your vision into a powerful, professional design.</p><div class="contact-card" style="margin-top:22px">
+<p><strong>WhatsApp / Phone:</strong> +256 769 590 700</p>
+<p><strong>Instagram:</strong> @DIRILGRAPHIXDESIGN</p>
+<p><strong>Facebook:</strong> Asher Munguleni</p>
+<p><strong>Email:</strong> <a href="https://mail.google.com/mail/?view=cm&fs=1&to=ashermunguleni@gmail.com" target="_blank" rel="noopener" style="color:#e9a9ff">ashermunguleni@gmail.com</a></p>
+</div>
+</div>
+<div class="card">
+<form onsubmit="openGmailCompose(event, this)">
+<input type="text" placeholder="Your name" required>
+<input type="email" placeholder="Your email address" required>
+<input type="text" placeholder="What Christian event or design do you need?" required>
+<textarea placeholder="Describe your project..." required></textarea>
+<button class="btn primary" type="submit">Send Project Request</button>
+<a class="btn secondary" href="https://mail.google.com/mail/?view=cm&fs=1&to=ashermunguleni@gmail.com" target="_blank" rel="noopener">Email Us Directly</a>
+</form>
+</div>
+</div>
+</section>
+<footer>© 2026 DIRIL GRAPHIX STUDIO • CHRIST • PURPOSE • SKILLS</footer>
+
+<script>
+function openGmailCompose(event, form) {
+  event.preventDefault();
+
+  const inputs = form.querySelectorAll('input');
+  const name = inputs[0].value.trim();
+  const email = inputs[1].value.trim();
+  const project = inputs[2].value.trim();
+  const details = form.querySelector('textarea').value.trim();
+
+  const subject = 'DIRIL GRAPHIX STUDIO - New Design Project';
+  const body =
+    'Hello DIRIL GRAPHIX STUDIO,%0A%0A' +
+    'Name: ' + encodeURIComponent(name) + '%0A' +
+    'Client Email: ' + encodeURIComponent(email) + '%0A' +
+    'Project: ' + encodeURIComponent(project) + '%0A%0A' +
+    'Project Details:%0A' + encodeURIComponent(details);
+
+  const url =
+    'https://mail.google.com/mail/?view=cm&fs=1&to=ashermunguleni@gmail.com' +
+    '&su=' + encodeURIComponent(subject) +
+    '&body=' + body;
+
+  window.open(url, '_blank', 'noopener');
+}
+</script>
+
+</body>
+</html>
